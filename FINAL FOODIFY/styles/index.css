@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+nav a:hover {
+  color: #ccc;
+}
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: ;
+}
+
+.navbar-logo {
+  width: 120px; 
+  height: auto;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.user-icon {
+  position: relative;
+}
+
+.user-dropdown {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  border-radius: 10px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.user-icon:hover .user-dropdown {
+  display: block;
+}
+
+.user-dropdown a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.user-dropdown a:hover {
+  background-color: #ddd;
+}
